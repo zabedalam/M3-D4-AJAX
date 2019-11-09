@@ -12,7 +12,8 @@
             3) When the button is pressed, change the style of the item and add it to another list
             4) Add "skip" button next to each item
             5) When pressed, the button should remove from the page the item not interesting from the user
-            6) Add a "search bar". When the user types more than 3 chars, you should filter the content of the page to show only the items with a matching name (hint: use .filter method)
+            6) Add a "search bar". When the user types more than 3 chars, you should filter the content 
+            of the page to show only the items with a matching name (hint: use .filter method)
             7) Allow the user to delete items from the cart list
             
             [EXTRA]
@@ -38,7 +39,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
@@ -55,6 +56,7 @@
               value=""
               placeholder="Search for an item"
               id="query"
+              onkeyup="filterSearch()"
             />
             <p class="lead" id="searchError"></p>
           </div>
@@ -102,6 +104,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
   </body>
 </html>
